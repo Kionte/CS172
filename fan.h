@@ -18,15 +18,9 @@ private:
     
     
 public:
-    void changeSpped() { // allows user to change the speed of the fan
-        
-    }
-    void changeOn() { // allows user to change status of the fan
-        
-    }
-    void changeRadis() { // allows user to change the radius of the fan 
-        
-    }
+    void changeSpped(); // allows user to change the speed of the fan
+    void changeOn(); // allows user to change status of the fan
+    void changeRadis(); // allows user to change the radius of the fan 
     
     
     Fan() { // default settings for the fan 

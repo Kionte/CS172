@@ -13,14 +13,14 @@
 class Venue {
     
 private:
-    Event schedualedEvents[12];
-    int numEvents;
-    
+    Event schedualedEvents[12]; // array hold all of the envents
+    int numEvents; // ????????????????????????____havnt used?____???????????????????_______________????????
+    bool validTime(int time); // checks througout the array to see if the time is valid
 public:
-    bool validTime(int time);
-    void addEvent(int time, string name);
-    Event findEvent(int time);
-    Event findEvent(string name);
+    
+    void addEvent(int time, string name); // adds event to array
+    Event findEvent(int time); // searches array to find event with same time | output will be name
+    Event findEvent(string name); // searches array to find the event with same name | output will be time
     
 };
 

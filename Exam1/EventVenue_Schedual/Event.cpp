@@ -13,27 +13,28 @@
 
 using namespace std;
 
-Event::Event() {
-    int Time = -1;
-    string name = "free time";
-}
+
 Event::Event(int time,string name) {
-    Title = name;
-    Time = time;
+    Title = name; // user input will equal title
+    Time = time; // user input will equal time
 }
 
-int Event::getTime() const {
+Event::Event() {
+    Time = -1; // default time
+    Title = "free"; // default title
+}
+int Event::getTime() const { // retrieves time from Event object
     return Time;
 }
 
-string Event::getTitle() const {
+string Event::getTitle() const { // gets time from Event object
     return Title;
 }
 
-void Event::setTime(int newTime) {
+void Event::setTime(int newTime) { // sets a new value for time
     Time = newTime;
 }
 
-void Event::setTitle(string newName) {
+void Event::setTitle(string newName) { // sets a new value for time
     Title = newName;
 }

@@ -10,53 +10,52 @@
 #include <iostream>
 
 bool Venue::validTime(int time) {
-    bool timeIsValid = true;
+    bool timeIsValid = true; // starts off true
     
-    for(int i=0;i<=12;i++) {
-        if(time == schedualedEvents[i].getTime()) {
-            timeIsValid = false;
+    for(int i=0;i<=12;i++) { // loop used to check all locations in array
+        if(time == schedualedEvents[i].getTime()) {//loop checks user (time) input with the rest of the array
+            timeIsValid = false; // if there is a match return true
         }
     }
-    return timeIsValid;
+    return timeIsValid; // return results form loop
 }
 
 Event Venue::findEvent(int time) { // used to get title of event
-    if(schedualedEvents[time].getTitle() != "free time") {
+    if(schedualedEvents[time].getTitle() != "free time") { // if the searched event != empty
        
-        return Venue::schedualedEvents[time];
+        return schedualedEvents[time]; // return the title  of the event
     }
     else {
-     
-        return Event();
+        Event noMatch; // object created to later show if there is a empty location
+        return noMatch; // returns defaultl constructor
     }
 }
 
 
 Event Venue::findEvent(string name) { // used to get time of event
     for(int i =0; i <= 12; i++) {
-        if(schedualedEvents[i].getTitle() == name) {
+        if(schedualedEvents[i].getTitle() == name) { // if event name equals searched name
         
-        return schedualedEvents[i];
+        return schedualedEvents[i];  // returns time of event
         }
+        
     }
-    
-        return Event();
-    
-    
+    Event noMatch; // object created to later show if there is a empty location
+    return noMatch; // returns default construct
 }
 
 
 
 
 
-void Venue::addEvent(int time, string name) {
-    if(validTime(time) == true) {
-        schedualedEvents[time].setTime(time);
-        schedualedEvents[time].setTitle(name);
-        cout << "Event Schedualed!" << endl;
+void Venue::addEvent(int time, string name) { // function is used to add events
+    if(validTime(time) == true) { // if there is a open space in desred location
+        schedualedEvents[time].setTime(time); // set the time of that location to user input
+        schedualedEvents[time].setTitle(name); // set the time of that location to user input
+        cout << "Event Schedualed!" << endl; // let user know event was added
     }
     else {
-        cout << "Time already taken :(" << endl;
+        cout << "Couldn't schedule event :(" << endl; // let user know event was taken
     }
 
 }

@@ -13,31 +13,31 @@
 class Rectangle2D {
     
 private:
-    double x;
-    double y;
-    double width;
-    double height;
+    double originalX; // variable for x
+    double originalY; // variable for y
+    double width; // variable for width
+    double height; // variable for height
     
 public:
-    double getX() const;
-    double getY() const;
-    double getWidth() const;
-    double getHeight() const;
+    double getX() const; // gets x
+    double getY() const; // gets y
+    double getWidth() const; // gets width
+    double getHeight() const; // gets height
     
-    void setX(double newX) const;
-    void setY(double newY) const;
-    void setWidth(double newWidth) const;
-    void setHeight(double newHeight) const;
+    void setX(double newX) const; // sets x
+    void setY(double newY) const; // sets y
+    void setWidth(double newWidth) const; // sets width
+    void setHeight(double newHeight) const; // sets height
     
-    double getArea() const;
-    double getPerimiter() const;
+    double getArea() const; // gets area
+    double getPerimiter() const; // gets perimiter
     
     bool contains(double x, double y) const; // returns true if specified point is inside rec 11.9a
     bool contains(const Rectangle2D &r) const; // returns true if specified recangle is inside rec 11.9b
     bool overLaps(const Rectangle2D &r) const; //returns true if specified recangle is inside rec 11.9c
     
-    Rectangle2D();
-    Rectangle2D(double newX, double newY, double newWidth, double newHeight);
+    Rectangle2D(); // default constructor
+    Rectangle2D(double newX, double newY, double newWidth, double newHeight); // custom constructor
 };
 
 #endif /* Rectangle2D_h */

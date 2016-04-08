@@ -11,14 +11,14 @@
 using namespace std;
 
 int main() {
-    Rectangle2D r1(2,2,5.5,4.9);
-    Rectangle2D r2(4,5,10.5,3.2);
-    Rectangle2D r3(3,5,2.3,5.4);
+    Rectangle2D r1(2,2,5.5,4.9); // creates object r1
+    Rectangle2D r2(4,5,10.5,3.2); // creates object r2
+    Rectangle2D r3(3,5,2.3,5.4); // creates object r3
     
-    cout << r1.getArea() << endl;
-    cout << r1.getPerimiter() << endl;
-    cout << r1.contains(3, 3) << endl;
-    cout << r1.contains(r2) << endl;
-    cout << r1.overLaps(r3) << endl;
+    cout << "The area is: " << r1.getArea() << endl; // out puts area
+    cout << "The perimiteris: " << r1.getPerimiter() << endl; // ouputs perimiter
+    cout << r1.contains(3, 3) << endl; // out puts true or false if point is in rect
+    cout << r1.contains(r2) << endl; // outputs true or false if rect is in rect
+    cout << r1.overLaps(r3) << endl; // out puts true or false if rect overlaps rect
     return 0;
 }

@@ -10,6 +10,12 @@
 //"find smallest element, use pointers to write a fintion that finds the elements  in a array of integers"
 // V.I*.V
 // S.*=A.P
+
+/*
+ Derek -
+ This looks real good as well, keep up the great programing, also Xcode is so beautiful to see :)
+ 20/20
+ */
 #include <iostream>
 using namespace std;
 

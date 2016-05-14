@@ -6,6 +6,11 @@
 //  Copyright © 2016 Kionté. All rights reserved.
 //
 
+/*Derek
+ just missing the calulate the number abouve the average function 
+ 16/20
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -53,7 +58,9 @@ int main() {
     int* numbers = allocArray(sizeOfArray); // create pointer to hold the function that cretes the array
     fillArray(numbers,sizeOfArray); // fill the array will user input
     cout << findAverage(numbers, sizeOfArray) << " is the average of the numbers you input" << endl; /// output the average of the numbers the user input
+
     
+    //Derek- Where is the number of numbers abouve the average part?? -4
     return 0;
 }
 

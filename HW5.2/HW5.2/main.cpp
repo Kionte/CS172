@@ -6,6 +6,13 @@
 //  Copyright © 2016 Kionté. All rights reserved.
 //
 
+
+/*
+ Derek - Looks great Kionte nicely done
+ 20/20
+ 
+ dont forget to delete array when your done :)
+*/
 #include <iostream>
 using namespace std;
 //v.i*.v

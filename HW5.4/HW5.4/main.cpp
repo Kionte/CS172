@@ -6,6 +6,12 @@
 //  Copyright © 2016 Kionté. All rights reserved.
 //
 
+
+/*
+Derek-
+ Your code is on point my friend.. Well done
+ 20/20
+ */
 #include <iostream>
 #include "Rectangle2D.h"
 using namespace std;

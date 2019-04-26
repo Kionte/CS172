@@ -18,7 +18,7 @@
 using namespace std;
 
 void size(int* size) { //gets size of array
-    cout << "how big will the array be? ";
+    cout << "How big will the array be? ";
     cin >> *size;
 }
 
